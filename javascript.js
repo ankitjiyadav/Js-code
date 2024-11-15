@@ -193,3 +193,37 @@ function show(){
     var x = document.getElementById('task');
     x.style.display='block';
 }
+
+const button = document.getElementById("myButton");
+const Output = document.getElementById("output");
+
+button.addEventListener('click',()=>{
+Output.textContent="button was clicked";
+});
+
+// passing data to event handlers
+const button1 = document.getElementById('myButton');
+
+button.addEventListener('click', (event) => {
+    console.log("Event Type:", event.type); // "click"
+    console.log("Target:", event.target); // The clicked element
+});
+
+
+// Traditional function
+function OM(a, b) {
+    return a + b;
+}
+console.log(OM(5,3));
+// Arrow function
+const arrow = (a, b) => a + b;
+
+console.log(arrow(2, 3));  // Output: 5
+
+
+const namev ="ankit yadav";
+ const ages = 26;
+ // Traditional string concatenation
+console.log("Hello,my name is " +namev+ " and i am ", +ages+ " years old.");
+// Templete literal 
+console.log(`Hello, mu name is ${namev} and i am ${ages} years old.`);
