@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Optional basic styling */
+        #taskList li {
+            margin-bottom: 10px;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+         
+        .container {
+            display: flex;
+            gap: 10px; /* box ke beech mein gap */
+            justify-content: center; /* center alignment */
+            margin-top: 20px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50; /* Green background */
+            color: white; /* Text color white */
+            display: flex;
+            align-items: center; /* Vertically center text */
+            justify-content: center; /* Horizontally center text */
+            border-radius: 5px; /* Rounded corners */
+            font-weight: bold; /* Bold text */
+            cursor: pointer; /* Mouse pointer on hover */
+        }
+        .box:hover {
+            background-color: #45a049; /* Darker green on hover */
+            transform: scale(1.1); /* Slightly larger on hover */
+            transition: 0.3s ease; /* Smooth transition */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="task" style="display: none;">
+        
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter new task">
+    <button onclick="addTask()">Add Task</button>
+    
+    </div>
+    <ul id="taskList">
+        <!-- Tasks will be added here -->
+    </ul>
+
+
+    <div>
+        <div class="container" id="container">
+            <div class="box" id="box-1" onclick="myFunction()">Box-1</div>
+            <div class="box" id="box-2" ="mouseOver"()>Box-2</div>
+            <div class="box" id="box-3">Box-3</div>
+            <div class="box" id="box-4">Box-4</div>
+            <button class="btn" onclick="show()">click me</button>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
